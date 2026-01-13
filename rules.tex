@@ -1,0 +1,458 @@
+\documentclass[12pt, parskip=half]{scrartcl}
+
+\usepackage{latexsym,graphicx, enumerate}
+\usepackage[juratotoc,clausemark=forceboth,juratocnumberwidth=2.5em]{scrjura}
+
+\textwidth16cm
+\textheight22.5cm
+\topmargin-1cm
+\evensidemargin0cm
+\oddsidemargin0cm
+
+\renewcommand*{\Clauseformat}[1]{#1}
+\renewcommand*{\labelenumi}{\thecontractClause.\thepar.\arabic{enumi}}
+\renewcommand*{\labelenumii}{\thecontractClause.\thepar.\arabic{enumi}.\arabic{enumii}}
+\renewcommand*{\labelenumiii}{\thecontractClause.\thepar.\arabic{enumi}.\arabic{enumii}.\arabig{enumiii}}
+\renewcommand*{\parformat}{%
+    \global\hangindent 3em
+    \makebox[3em][l]{\thecontractClause.\thepar\hfill}%
+}
+\renewcommand*{\parformatseparation}{}
+
+\newcommand*{\secheading}[1]{\parnumberfalse\textbf{#1}\parnumbertrue}
+
+\newcommand*{\referClause}[1]{Section \refClauseN{clause:#1}}
+\newcommand*{\referArticle}[1]{Section \refClauseN{article:#1}.\refParN[arabic]{article:#1}}
+\newcommand*{\referItem}[1]{Section \refClauseN{article:#1}.\refParN[arabic]{article:#1}.\ref{item:#1}}
+\newcommand*{\referHeading}[1]{Section \refClauseN{article:#1:start}.\refParN[arabic]{article:#1:start} to \refClauseN{article:#1:end}.\refParN[arabic]{article:#1:end}}
+
+\subject{Jet Lag: The Game}
+\title{Hide and Seek Sydney Rules}
+\author{Wendover Productions and Alex Varughese}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\appendix
+
+\begin{contract}
+    \Clause{title=Game Boundaries}
+
+    This version of Hide and Seek is to be played across Opal-compatible stations and services in NSW.
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item All non-bus transport stations (excluding Hunter Line, Bombaderry, Berry, Gerringong, Rydal, Tarana, Bathurst, stations between Emu Plains and Doonside inclusive and stations between Merrylands and Liverpool inclusive.) are available hiding spots.
+        \item All opal-compatible services can be used by both the hider and seeker.
+    \end{enumerate}
+
+    The borders of the game are defined by the Game Area link, and neither the hider nor seeker are permitted to leave this area during the game.
+
+    The game will start on the 31st of January at 9am and will finish by 8pm.
+
+    \Clause{title=Hiding Period}
+
+    At the start of each round, one team will become the hider while the other becomes seekers. The order that teams become hiders should be determined randomly. The members of each team should stay together at all times.
+
+    All players will start the game at Epping Library.
+
+    The seekers must carry the seeker phone with them at all times with location services on, while the hider carries the hider phone with them.
+
+    The first 60 minutes of a round is the hiding period, during which only the hider may move.
+
+    At the end of the hiding period, the hider must be within 500m of a non-bus transit station and not on transport. If there are multiple stations within 500m, the hider must choose one to be "their" station.
+
+    For the rest of this round, the hider must stay within 500m of that station.
+
+    After this, the seeking phase begins.
+
+    \Clause{title=Asking Questions}
+
+    At any time in the seeking phase, the seekers can ask questions from the list defined in \referClause{questions}.
+
+    The hider must answer each question truthfully within 5 minutes (or 10 minutes for photo questions).
+    
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item While the seekers are waiting for a hider to respond to a question, they may not ask another question.
+        \item If the question is not answered within the allotted time, the hider's time is paused until the question is answered and the hider receives no reward.
+    \end{enumerate}
+
+    Seekers are not permitted to use Google Street View or a similar tool. Additionally, seekers may not search for station images or open the images tab of a station on Google Maps. Looking at uploaded images of business on Google Maps is permitted.
+
+    \Clause{title=Hider Deck}
+
+    After the hider answers a question, they will draw and keep a certain number of cards as defined in \referClause{questions}.
+
+    If a question is asked multiple times, the hider receives their reward multiple times. For example, if this is the second time a question has been asked, the hider draws a certain number of cards and keeps some, then repeats this a second time. If it was the third time, they would do this process three times, and so on.
+
+    The hider can keep a maximum of 6 cards in their hand at any time (unless expanded by a powerup).
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item If the hider exceeds this hand limit, they must immediately play or discard cards until they are within the limit.
+    \end{enumerate}
+
+    \Clause{title=End Game}
+
+    Once the seekers have entered the hiding zone, but are no longer on public transport, the end game will begin.
+
+    At the time when the end game begins, the hider must be in a publically accessible hiding spot, and must stay in that hiding spot for the rest of the game.
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item Your hiding spot must be publically accessible during all game hours.
+        \item Your hiding spot must be somewhere you can stay for multiple hours (for this reason it is recommended not to use stores or other businesses).
+        \item There must exist a walking route given by Google Maps that goes within 3m of your final hiding spot.
+    \end{enumerate}
+
+    If because of the restrictions of the end game (or for any other reason), answering a question is impossible, then the hider may reply "I cannot answer this question" and still receive a reward.
+
+    Once the hiders are within 2 meters and have spotted the seekers, the hider's time is calculated as the total time of the seeking phase plus any time bonuses that are still in the hider's hand.
+
+    After this, the new hider has up to 10 minutes of planning before they start their hiding period. During this time, ensure the hiders have the hider phone and the seekers have the seeker phone. Then the game continues from the last hider's hiding position.
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item If the hider's transit station was an intercity station (one that can only be accessed by SCO, STH, CCN, BMT, etc) or the Newcastle Light Rail, the next hider has the option to move their starting location to the closest metropolitan station.
+        \item If this happens, both the hiders and the seekers will travel together to that station. As soon as everyone disembarks and the train leaves, the hiding phase of the next round begins on the platform.
+    \end{enumerate}
+
+    Once every team has hidden once, the game ends and the team with the longest hiding time wins.
+
+    A hider can hide for a maximum of 3.5 hours, after which they must reveal their location to the hiders.
+
+
+    \Clause{title=Questions}\label{clause:questions}
+
+    There are 6 categories of questions that can be asked.
+    
+    Many questions refer to particular classes of locations. In this case, the Google Maps category will be used to determine which locations are included, and any distances are measured from the Google Maps pin (this applies even if erronous, unless all players agree otherwise). Additionally, only locations within the map's borders are valid answers.
+
+    If a question refers to the hider's location, it should be measured to their location at the time of answering, not the location of their transit station.
+
+    In general, the seekers should clarify any ambiguity in the question (for example sending a screenshot of every valid amusement park).
+
+    A matching question follows the format "Is your nearest [LOCATION TYPE] the [SEEKER'S NEAREST LOCATION TYPE]?"
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item The hider's reward for answering a matching question is to draw 3 cards and keep 1 of them.
+        \item The full list of matching questions can be found in \referArticle{matchingQuestions}.
+    \end{enumerate}
+
+    A measuring question follows the format "Is your nearest [LOCATION TYPE] closer than [DISTANCE TO SEEKER'S NEAREST LOCATION TYPE]?"
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item The hider's reward for answering a measuring question is to draw 3 cards and keep 1 of them.
+        \item The full list of measuring questions can be found in \referArticle{measuringQuestions}.
+    \end{enumerate}
+
+    A radar question follows the format "Are you within [DISTANCE] of the seekers?"
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item The hider's reward for answering a radar question is to draw 2 cards and keep 1 of them.
+        \item The full list of radar questions can be found in \referArticle{radarQuestions}.
+    \end{enumerate}
+
+    A thermometer question follows the format "After travelling at least [DISTANCE] am I closer than I was?"
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item If you wish to start a thermometer question, you must first send a Google Maps pin of your current location. Then after travelling at least the appropriate distance (as the crow flies) send a pin of your new location.
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item If you ask another question while the thermometer is active, it is considered cancelled. The hider does not receive a reward.
+        \end{enumerate}
+        \item The hider's reward for answering a thermometer question is to draw 2 cards and keep 1 of them.
+        \item The full list of thermometer questions can be found in \referArticle{thermometerQuestions}.
+    \end{enumerate}
+
+    The seekers may ask photo questions from one of the provided categories. If it is not possible for the hider to send a photo that matches the specification, they can reply "I cannot answer the question" but still receive a reward.
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item The hider has 10 minutes to answer the photo question.
+        \item The photo must be taken with the hider phone's normal aspect ratio.
+        \item The hider may censor text in photos before sending.
+        \item If you are asked a photo question, and the seekers arrive in your hiding zone within 10 minutes of you taking the photo, you can pause the game until you are done taking the photo and can reposition to your intended final hiding spot. During a pause, the seekers can't move and the hide time clock is paused. This is to prevent the seekers from using a photo question to trap you in a suboptimal final hiding spot.TODO FIX
+        \item The hider's reward for answering a photo question is to draw 1 card.
+        \item The full list of photo questions can be found in \referArticle{photoQuestions}.
+    \end{enumerate}
+
+    A tentacles question follows the format "Within 2km of me which [LOCATION TYPE] are you nearest to?"
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item If the hider is not within 2km, the hider can respond that they are not within reach and still receive a reward.
+        \item The seeker should provide a list of each valid location within 2km of their current location.
+        \item The hider's reward for answering a tentacles question is to draw 4 cards and keep 2 of them.
+        \item The full list of tentacles questions can be found in \referArticle{tentaclesQuestions}.
+    \end{enumerate}
+
+    \Clause{title=Question List}
+
+    The locations that a matching question can refer to are:\label{article:matchingQuestions}
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item Commercial airport,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The only airports in play are Newcastle and Sydney Airport.
+        \end{enumerate}
+        \item Transit line,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item This question can only be asked if the seekers are on a moving service.
+            \item The seekers must send the hider a screenshot of all the stations the service they are currently on will stop at (not pass through). If the hider's station is one of those, they must answer "yes".
+        \end{enumerate}
+        \item Station Name Length,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item This question counts the number of characters (including hyphens and spaces) on the Google Maps page is the same as the seeker's current station or not.
+            \item Additionally, the hider must also state if the hider's station name is longer or shorter than the seeker's.
+        \end{enumerate}
+        \item Street or Path,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Whether the name of the seeker's street or path exactly matches the hider's street or path. If the street or path is unnamed, the hider and seeker must be on the same segment (ie there are no intersections between them) for there to be a yes result.
+        \end{enumerate}
+        \item Local Council Area,
+        \item Suburb,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item You can see where the suburbs are using the mangomap Sydney Suburb Changes map.
+        \end{enumerate}
+        \item Park (any pin marked with a tree),
+        \item Amusement Park (any pin marked with a ferris wheel),
+        \item Zoo (any pin marked with a paw print),
+        \item Aquarium (any pin marked with a fin),
+        \item Golf Course (any pin marked with a golfer),
+        \item Museum (any pin marked with a museum icon),
+        \item Movie Theatre (any pin marked with a ticket),
+        \item Hospital (any pin marked with a H),
+        \item Library (any pin marked with a book),
+        \item Foreign Consulate (any pin marked with a consulate icon).
+    \end{enumerate}
+
+    The locations that a measuring question can refer to are (see \referArticle{matchingQuestions} for further specification):\label{article:measuringQuestions}
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item Commercial airport,
+        \item Rail station,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Including light rail, heavy rail and metro.
+        \end{enumerate}
+        \item Local Council Border,
+        \item Suburb Border,
+        \item Body of Water,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Any body of water on Google Maps, excluding pools.
+        \end{enumerate}
+        \item Coastline,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item A coastline is defined as any place where land meets the ocean or a body of water that flows directly into the ocean via a waterway that is never less than 2km across.
+        \end{enumerate}
+        \item Park,
+        \item Amusement Park,
+        \item Zoo,
+        \item Aquarium,
+        \item Golf Course,
+        \item Museum,
+        \item Movie Theatre,
+        \item Hospital,
+        \item Library,
+        \item Foreign Consulate.
+    \end{enumerate}
+
+    The distances available for a thermometer are: \label{article:thermometerQuestions}
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item 1km,
+        \item 5km,
+        \item 15km.
+    \end{enumerate}
+
+    The distances available for a radar are: \label{article:radarQuestions}
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item 500m,
+        \item 1km,
+        \item 2km,
+        \item 5km,
+        \item 10km,
+        \item 15km,
+        \item 40km,
+        \item 80km,
+        \item 160km,
+        \item Custom (can be any distance).
+    \end{enumerate}
+
+    The locations that a tentacles question can refer to are (see \referArticle{matchingQuestions} for further specification):\label{article:tentaclesQuestions}
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item Museums,
+        \item Libraries,
+        \item Movie Theatres,
+        \item Hospitals.
+    \end{enumerate}
+
+    The types of photo questions available to the seekers are:\label{article:photoQuestions}\label{article:tallestStructure}\label{article:stationBuilding}
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item A tree,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Must include the entire tree.
+        \end{enumerate}
+        \item The sky,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item With the phone on the ground, shoot directly up with no zoom.
+        \end{enumerate}
+        \item You,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Phone perpendicular to the ground, arm fully extended, shoot towards you with no zoom.
+        \end{enumerate}
+        \item Widest street,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Must include both sides of the street, but does not have to include background.
+        \end{enumerate}
+        \item Tallest structure in your sightline,\label{item:tallestStructure}
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Take a photo of whichever building looks tallest, not necessarily the one that is actually tallest.
+            \item Must include top and two sides, and the top must be in the upper $\frac{1}{3}$ of the frame.
+        \end{enumerate}
+        \item Any building visible from the station,\label{item:stationBuilding}
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Must stand directly outside a station entrance. If there are multiple entrances, you may choose one. Must include roof and two sides, and the top must be in the upper $\frac{1}{3}$ of the frame.
+        \end{enumerate}
+        \item Tallest building visible from the station,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item See \referItem{tallestStructure} and \referItem{stationBuilding} for specification.
+        \end{enumerate}
+        \item Trace nearest path or street,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item TODO DETERMINE HOW
+        \end{enumerate}
+        \item Two buildings,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Must include bottom and up to 4 stories.
+        \end{enumerate}
+        \item Restaurant Interior,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item While standing outside the restaurant, take a photo through the window with no zoom.
+        \end{enumerate}
+        \item Park,
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item No zoom, phone perpendicular to the ground and at least 2 meters away from any obstruction.
+        \end{enumerate}
+        \item Grocery Store Aisle.
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Without zooming, stand at the end of the aisle and shoot directly down.
+        \end{enumerate}
+    \end{enumerate}
+
+
+    \Clause{title=Hider Deck and Curses}
+
+    There are three types of cards in the hider deck, time bonuses, powerups and curses, and their distribution can be found in Table \ref{table:hiderDeck}.
+
+    \begin{table}
+        \begin{center}
+            \begin{tabular}{ |c|c|c| } 
+                \hline
+                Card & Type & Quantity \\ 
+                \hline
+                3m Time Bonus & Time Bonus & 25 \\ 
+                6m Time Bonus & Time Bonus & 15 \\ 
+                9m Time Bonus & Time Bonus & 10 \\ 
+                12m Time Bonus & Time Bonus & 3 \\ 
+                18m Time Bonus & Time Bonus & 2 \\
+                \hline
+                Randomize & Powerup & 4 \\
+                Veto & Powerup & 4 \\
+                Duplicate & Powerup & 2 \\
+                Discard 1 Draw 2 & Powerup & 4 \\
+                Discard 2 Draw 3 & Powerup & 4 \\
+                Draw 1, Expand Hand Size By 1 & Powerup & 2 \\
+                \hline
+                Various & Curse & 25 \\
+                \hline
+            \end{tabular}
+        \end{center}
+        \caption{Distribution of cards in the hider deck}
+        \label{table:hiderDeck}
+    \end{table}
+
+    TODO TIME BONUS
+
+    TODO RANDOMIZE
+
+    TODO VETO
+
+    TODO DUPLICATE
+
+    TODO DISCARD X DRAW X+1
+
+    TODO DRAW 1, EXPAND HAND SIZE BY 1
+
+    You can play multiple curses at once (provided you can pay the provided casting cost for each one), but there may only be one active curse preventing the seekers from asking questions or taking transit.
+
+    The 25 curses in the deck are the following:
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item Curse of the Zoologist (MUST BE ABLE TO SEND PHOTO AND TYPE);
+        \item Curse of the Unguided Tourist (MUST BE ABLE TO SEND PHOTO);
+        \item Curse of the Endless Tumble (DICE ROLL, BONUS TIME);
+        \item Curse of the Hidden Hangman (DISCARD TWO CARDS);
+        \item Curse of the Overflowing Chalice (DRAW EXTRA CARD FOR THREE QUESTIONS, DISCARD CARD);
+        \item Curse of the Mediocre Travel Agent (SELECT LOCATION AND BONUS TIME);
+        \item Curse of the Luxury Car (MUST BE ABLE TO SEND PHOTO AND COST);
+        \item Curse of the U-Turn;
+        \item Curse of the Bridge Troll;
+        \item Curse of the Water Weight;
+        \item Curse of the Jammed Door (DISCARD TWO CARDS, ROLL DICE);
+        \item Curse of the Cairn;
+        \item Curse of the Urban Explorer (DISCARD TWO CARDS);
+        \item Curse of the Distant Cuisine (COUNTRY NAME);
+        \item Curse of the Right Turn (DISCARD 1 CARD);
+        \item Curse of the Labyrinth (SEND PHOTO);
+        \item Curse of the Bird Guide (SEND TIME);
+        \item Curse of the Drained Brain (DISABLE 3 QUESTIONS, DISCARD HAND);
+        \item Curse of the Ransom Note (SEND PHOTO AND ASK QUESTION AS RANSOM NOTE);
+        \item Curse of the Gambler's Feet (ROLL DIE);
+        \item Curse of the Prosperous Home (DISCARD 20 MINUTES OF TIME BONUS);
+        \item Curse of the Void (DISCARD VETO);
+        \item Curse of the Express Route (DISCARD 15 MINUTES OF TIME BONUS);
+        \item Curse of the Zipped Lip (DISCARD POWERUP);
+        \item Curse of the Plagued Word;
+    \end{enumerate}
+
+
+
+\end{contract}
+
+\end{document}
