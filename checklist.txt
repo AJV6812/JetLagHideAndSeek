@@ -1,0 +1,43 @@
+3.1 At any time in the seeking phase, the seekers can ask questions from the list defined in Section 6.
+3.2 The hider must answer each question truthfully within 5 minutes (or 10 minutes for photo questions).
+3.2.1 While the seekers are waiting for a hider to respond to a question, they may not ask another question.
+3.2.2 If the question is not answered within the allotted time, the hider’s time is paused until the question is answered and the hider receives no reward.
+4.1 After the hider answers a question, they will draw and keep a certain number of cards as defined in Section 6.
+4.2 If a question is asked multiple times, the hider receives their reward multiple times. For example, if this is the second time a question has been asked, the hider draws a certain number of cards and keeps some, then repeats this a second time. If it was the third time, they would do this process three times, and so on.
+4.3 The hider can keep a maximum of 6 cards in their hand at any time (unless expanded by a powerup).
+4.3.1 If the hider exceeds this hand limit, they must immediately play or discard cards until they are within the limit.
+5.3 If because of the restrictions of the end game (or for any other reason), answering a question is impossible, then the hider may reply ”I cannot answer this question” and still receive a reward.
+5.4 Once the hiders are within 2 meters and have spotted the seekers, the hider’s time is calculated as the total time of the seeking phase plus any time bonuses that are still in the hider’s hand.
+5.5 After this, the new hider has up to 10 minutes of planning before they start their hiding period. During this time, ensure the hiders have the hider phone and the seekers have the seeker phone. Then the game continues from the last hider’s hiding position.
+5.6 Once every team has hidden once, the game ends and the team with the longest hiding time wins.
+5.7 A hider can hide for a maximum of 3.5 hours, after which they must reveal their location to the hiders.
+6.4 In general, the seekers should clarify any ambiguity in the question (for example sending a screenshot of every valid amusement park).
+6.5 A matching question follows the format ”Is your nearest [LOCATION TYPE] the [SEEKER’S NEAREST LOCATION TYPE]?”
+6.5.1 The hider’s reward for answering a matching question is to draw 3 cards and keep 1 of them.
+6.6 A measuring question follows the format ”Is your nearest [LOCATION TYPE] closer than [DISTANCE TO SEEKER’S NEAREST LOCATION TYPE]?”
+6.6.1 The hider’s reward for answering a measuring question is to draw 3 cards and keep 1 of them.
+6.7 A radar question follows the format ”Are you within [DISTANCE] of the seekers?”
+6.7.1 The hider’s reward for answering a radar question is to draw 2 cards and keep 1 of them.
+6.8 A thermometer question follows the format ”After travelling at least [DISTANCE] am I closer than I was?”
+6.8.1 If you wish to start a thermometer question, you must first send a Google Maps pin of your current location. Then after travelling at least the appropriate distance (as the crow flies) send a pin of your new location.
+6.8.1.1 If you ask another question while the thermometer is active, it is considered cancelled. The hider does not receive a reward.
+6.8.2 The hider’s reward for answering a thermometer question is to draw 2 cards and keep 1 of them.
+6.9 The seekers may ask photo questions from one of the provided categories. If it is not possible for the hider to send a photo that matches the specification, they can reply ”I cannot answer the question” but still receive a reward.
+6.9.1 The hider has 10 minutes to answer the photo question. If you are asked a photo question, and the seekers arrive in your hiding zone within 10 minutes of you taking the photo, you can pause the game until you are done taking the photo and can reposition to your intended final hiding spot. During a pause, the seekers can’t move and the hide time clock is paused. This is to prevent the seekers from using a photo question to trap you in a suboptimal final hiding spot.TODO FIX
+6.9.5 The hider’s reward for answering a photo question is to draw 1 card.
+6.10 A tentacles question follows the format ”Within 2km of me which [LOCATION TYPE] are you nearest to?”
+6.10.1 If the hider is not within 2km, the hider can respond that they are not within reach and still receive a reward.
+6.10.2 The seeker should provide a list of each valid location within 2km of their current location.
+6.10.3 The hider’s reward for answering a tentacles question is to draw 4 cards and keep 2 of them.
+7.1.2.2 The seekers must send the hider a screenshot of all the stations the service they are currently on will stop at (not pass through). If the hider’s station is one of those, they must answer ”yes”.
+7.1.3.2 Additionally, the hider must also state if the hider’s station name is longer or shorter than the seeker’s.
+7.1.6.1 You can see where the suburbs are using the mangomap Sydney Suburb Changes map.
+8.1 There are three types of cards in the hider deck, time bonuses, powerups and curses, and their distribution can be found in Table 1.
+8.2 TODO TIME BONUS
+8.3 TODO RANDOMIZE
+8.4 TODO VETO
+8.5 TODO DUPLICATE
+8.6 TODO DISCARD X DRAW X+1
+8.7 TODO DRAW 1, EXPAND HAND SIZE BY 1
+8.8 You can play multiple curses at once (provided you can pay the provided casting cost for each one), but there may only be one active curse preventing the seekers from asking questions or taking transit.
+8.9 See rules for curses
