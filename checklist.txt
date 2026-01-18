@@ -6,12 +6,9 @@
 4.2 If a question is asked multiple times, the hider receives their reward multiple times. For example, if this is the second time a question has been asked, the hider draws a certain number of cards and keeps some, then repeats this a second time. If it was the third time, they would do this process three times, and so on.
 4.3 The hider can keep a maximum of 6 cards in their hand at any time (unless expanded by a powerup).
 4.3.1 If the hider exceeds this hand limit, they must immediately play or discard cards until they are within the limit.
-5.3 If because of the restrictions of the end game (or for any other reason), answering a question is impossible, then the hider may reply ”I cannot answer this question” and still receive a reward.
 5.4 Once the hiders are within 2 meters and have spotted the seekers, the hider’s time is calculated as the total time of the seeking phase plus any time bonuses that are still in the hider’s hand.
 5.5 After this, the new hider has up to 10 minutes of planning before they start their hiding period. During this time, ensure the hiders have the hider phone and the seekers have the seeker phone. Then the game continues from the last hider’s hiding position.
-5.6 Once every team has hidden once, the game ends and the team with the longest hiding time wins.
 5.7 A hider can hide for a maximum of 3.5 hours, after which they must reveal their location to the hiders.
-6.4 In general, the seekers should clarify any ambiguity in the question (for example sending a screenshot of every valid amusement park).
 6.5 A matching question follows the format ”Is your nearest [LOCATION TYPE] the [SEEKER’S NEAREST LOCATION TYPE]?”
 6.5.1 The hider’s reward for answering a matching question is to draw 3 cards and keep 1 of them.
 6.6 A measuring question follows the format ”Is your nearest [LOCATION TYPE] closer than [DISTANCE TO SEEKER’S NEAREST LOCATION TYPE]?”
@@ -20,7 +17,7 @@
 6.7.1 The hider’s reward for answering a radar question is to draw 2 cards and keep 1 of them.
 6.8 A thermometer question follows the format ”After travelling at least [DISTANCE] am I closer than I was?”
 6.8.1 If you wish to start a thermometer question, you must first send a Google Maps pin of your current location. Then after travelling at least the appropriate distance (as the crow flies) send a pin of your new location.
-6.8.1.1 If you ask another question while the thermometer is active, it is considered cancelled. The hider does not receive a reward.
+6.8.1.1 If you ask another question while the thermometer is active, it is considered cancelled. The hider does receive a reward.
 6.8.2 The hider’s reward for answering a thermometer question is to draw 2 cards and keep 1 of them.
 6.9 The seekers may ask photo questions from one of the provided categories. If it is not possible for the hider to send a photo that matches the specification, they can reply ”I cannot answer the question” but still receive a reward.
 6.9.1 The hider has 10 minutes to answer the photo question. If you are asked a photo question, and the seekers arrive in your hiding zone within 10 minutes of you taking the photo, you can pause the game until you are done taking the photo and can reposition to your intended final hiding spot. During a pause, the seekers can’t move and the hide time clock is paused. This is to prevent the seekers from using a photo question to trap you in a suboptimal final hiding spot.TODO FIX
