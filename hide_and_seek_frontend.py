@@ -6,7 +6,6 @@ import configparser
 
 import disnake
 from disnake.ext import commands, tasks
-from disnake import embeds
 from dotenv import load_dotenv
 
 from hide_and_seek_game_state import GameState
