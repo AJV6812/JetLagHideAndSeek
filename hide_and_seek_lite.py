@@ -5,3 +5,4 @@
 #Command to discard card
 #Some cards notify others
 #Notify when over hand limit
+#Roll x sided die
