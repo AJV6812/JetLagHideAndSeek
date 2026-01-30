@@ -3,3 +3,4 @@ rules.f*
 rules.log
 rules.s*
 rules.t*
+.env

@@ -179,7 +179,7 @@
         \item The hider has 10 minutes to answer the photo question.
         \item The photo must be taken with the hider phone's normal aspect ratio.
         \item The hider may censor text in photos before sending.
-        \item If you are asked a photo question, and the seekers arrive in your hiding zone within 10 minutes of you taking the photo, you can pause the game until you are done taking the photo and can reposition to your intended final hiding spot. During a pause, the seekers can't move and the hide time clock is paused. This is to prevent the seekers from using a photo question to trap you in a suboptimal final hiding spot.TODO FIX
+        \item If the seekers ask or receive an answer to a photo question within 10 minutes of arriving in the hider's hiding zone, the hider can pause the game for 10 minutes to finish taking the photo if necessary and move to a final hiding spot. The seekers cannot move during this time, and the hider's clock is paused.
         \item The hider's reward for answering a photo question is to draw 1 card.
         \item The full list of photo questions can be found in \referArticle{photoQuestions}.
     \end{enumerate}
@@ -351,7 +351,7 @@
         \item Trace nearest path or street,
         \begin{enumerate}
             \setlength{\leftskip}{6em}
-            \item TODO DETERMINE HOW
+            \item With Google Maps open, use a pencil and paper to trace out the street or path from nearest intersection to nearest intersection. Then send a photo of the result. The drawing must also include a compass to tell which direction is north.
         \end{enumerate}
         \item Two buildings,
         \begin{enumerate}
@@ -399,7 +399,7 @@
                 Discard 2 Draw 3 & Powerup & 4 \\
                 Draw 1, Expand Hand Size By 1 & Powerup & 2 \\
                 \hline
-                Various & Curse & 25 \\
+                Various & Curse & 28 \\
                 \hline
             \end{tabular}
         \end{center}
@@ -407,48 +407,168 @@
         \label{table:hiderDeck}
     \end{table}
 
-    TODO TIME BONUS
+    Time bonuses give extra time only if held in hand until the end of the game. The time granted ranges from 3 minutes to 18 minutes.
 
-    TODO RANDOMIZE
+    A randomise card can be played in response to any question asked by the seekers (within the allotted answer window).
 
-    TODO VETO
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item When played, the seekers randomly choose between the unasked questions in the same category. This question is asked instead.
+        \item The hider only receives a reward for answering the randomised question.
+        \item The original question is not considered to have been asked, so can be asked again.
+    \end{enumerate}
 
-    TODO DUPLICATE
+    A veto card can be played in response to any question asked by the seekers (within the allotted answer window).
 
-    TODO DISCARD X DRAW X+1
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item When played, the question does not have to be answered by the hider.
+        \item The hider receives no reward.
+        \item The original question is considered to have been asked, so if asked again will be for an increased price.
+    \end{enumerate}
 
-    TODO DRAW 1, EXPAND HAND SIZE BY 1
+    A duplicate card can be played to duplicate any other card in your hand.
+
+    A "discard 1, draw 2" or "discard 2, draw 3" card can be used to discard a certain number of cards from the hider's hand to draw that many.
+
+    \begin{enumerate}
+        \setlength{\leftskip}{3em}
+        \item The hider must have enough cards to discard the required amount.
+        \item The overall number of cards in the hider's hand stays the same since the discard $x$, draw $x+1$ card is also discarded.
+    \end{enumerate}
+
+    When a draw 1, expand maximum handsize by 1 card is played, the hider can draw an additional card and the maximum number of cards they have expands by one (usually from 6 to 7).
 
     You can play multiple curses at once (provided you can pay the provided casting cost for each one), but there may only be one active curse preventing the seekers from asking questions or taking transit.
 
-    The 25 curses in the deck are the following:
+    The 28 curses in the deck are the following (see card description for additional information):
     \begin{enumerate}
         \setlength{\leftskip}{3em}
-        \item Curse of the Zoologist (MUST BE ABLE TO SEND PHOTO AND TYPE);
-        \item Curse of the Unguided Tourist (MUST BE ABLE TO SEND PHOTO);
-        \item Curse of the Endless Tumble (DICE ROLL, BONUS TIME);
-        \item Curse of the Hidden Hangman (DISCARD TWO CARDS);
-        \item Curse of the Overflowing Chalice (DRAW EXTRA CARD FOR THREE QUESTIONS, DISCARD CARD);
-        \item Curse of the Mediocre Travel Agent (SELECT LOCATION AND BONUS TIME);
-        \item Curse of the Luxury Car (MUST BE ABLE TO SEND PHOTO AND COST);
+        \item Curse of the Zoologist;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The seekers must be able to identify the type of animal from the photo.
+            \item A "bug" is anything that is colloquially called a bug (including insects, arachnids, diplopoda, chilopoda, etc)
+            \item "Wild" means not in human captivity.
+        \end{enumerate}
+        \item Curse of the Unguided Tourist;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The structure cannot be a road or path.
+        \end{enumerate}
+        \item Curse of the Endless Tumble;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The 30m is measured parallel to the ground.
+            \item The die can be rolled on an inclined surface.
+            \item If the die is lost or does not land cleanly on one side, the curse cannot be counted.
+            \item Any time bonuses should be delivered immediately.
+        \end{enumerate}
+        \item Curse of the Hidden Hangman;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The word must be identified by the Google English dictionary.
+            \item If the hider doesn't respond within 30 seconds, the curse is cleared instantly.
+        \end{enumerate}
+        \item Curse of the Overflowing Chalice;
+        \item Curse of the Mediocre Travel Agent;
+        \item Curse of the Luxury Car;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The hider must send a photo of a car, and the seekers must confirm that the car is the one the hider claims (and vice versa).
+            \item The cost calculation should include year of manufacturing but not any additional modifications.
+        \end{enumerate}
         \item Curse of the U-Turn;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item If the hider is unsure about whether the hider's are on transit or which station their train will stop at next, they may ask.
+            \item Even if the seeker's current mode of transit would eventually lead them closer, if the next stopping station is further then you can play this curse.
+            \item If there is any ambiguity, the hider must inform the seekers what they believe is the seekers next station.
+        \end{enumerate}
         \item Curse of the Bridge Troll;
         \item Curse of the Water Weight;
-        \item Curse of the Jammed Door (DISCARD TWO CARDS, ROLL DICE);
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Any liquid already carried by the seekers does not count.
+            \item The liquid does not have to be evenly carried by the seekers.
+            \item The liquid is abandonded if the seekers do not have the original liquid with them when they reach the hider.
+        \end{enumerate}
+        \item Curse of the Jammed Door;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The dice can only be rolled once the seekers can see the doorway.
+            \item Doorways within a building that lead to other parts of the same building do not need to pass a dice check.
+            \item If the curse expires while a door is on cooldown, the cooldown also immediatley expires.
+            \item If there is any dispute, err on the side of doing a dice check.
+        \end{enumerate}
         \item Curse of the Cairn;
-        \item Curse of the Urban Explorer (DISCARD TWO CARDS);
-        \item Curse of the Distant Cuisine (COUNTRY NAME);
-        \item Curse of the Right Turn (DISCARD 1 CARD);
-        \item Curse of the Labyrinth (SEND PHOTO);
-        \item Curse of the Bird Guide (SEND TIME);
-        \item Curse of the Drained Brain (DISABLE 3 QUESTIONS, DISCARD HAND);
-        \item Curse of the Ransom Note (SEND PHOTO AND ASK QUESTION AS RANSOM NOTE);
-        \item Curse of the Gambler's Feet (ROLL DIE);
-        \item Curse of the Prosperous Home (DISCARD 20 MINUTES OF TIME BONUS);
-        \item Curse of the Void (DISCARD VETO);
-        \item Curse of the Express Route (DISCARD 15 MINUTES OF TIME BONUS);
-        \item Curse of the Zipped Lip (DISCARD POWERUP);
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The hider cannot begin fulfilling the casting cost of this curse if they would be unable to play a curse for another reason.
+            \item Once the hider has fulfilled the casting cost, they must play the curse immediately.
+            \item Found in nature doesn't mean the rocks must have been untouched by humans, but that you must find the rocks yourself, not purchase them.
+        \end{enumerate}
+        \item Curse of the Urban Explorer;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Any pending question asked on transit must still be answered.
+            \item Seekers cannot ask questions on a platform or in the station building.
+        \end{enumerate}
+        \item Curse of the Distant Cuisine;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The restaurant must reference a specific country or subregion of a country in the name or on the menu.
+            \item It must be by far the most prominent country or subregion of a country referenced in this way.
+            \item Measure from the nearest point in that country.
+        \end{enumerate}
+        \item Curse of the Right Turn;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The curse only applies to street intersections (meaning the passage is intended for cars), or footpaths along streets.
+            \item The curse has no effect indoors or in any other areas where cars are not meant to go.
+        \end{enumerate}
+        \item Curse of the Labyrinth;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item Solvable means that there is a conventional solution to the maze.
+            \item The time limit starts from the first line drawn, not from when the hider first start collecting materials.
+            \item If the hider chooses to restart their maze, they do not restart their time limit.
+            \item You must not consult the internet or any other materials when drawing the maze.
+        \end{enumerate}
+        \item Curse of the Bird Guide;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item There must be a recognisable portion of the bird on camera the whole time.
+        \end{enumerate}
+        \item Curse of the Drained Brain;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item If this curse is played while the seekers are waiting for an answer to a question, the hider's hand is discarded before they receive reward for answering that question.
+            \item If you do this, you cannot ban the question that the seekers are waiting on.
+            \item This curse removes questions from the game, not simply increases their cost like a veto.
+        \end{enumerate}
+        \item Curse of the Ransom Note;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item The hider cannot begin fulfilling the casting cost of this curse if they would be unable to play a curse for another reason.
+            \item Once the hider has fulfilled the casting cost, they must play the curse immediately.
+            \item Neither the hider nor the seekers can use game material, or anything printed by themselves.
+            \item The message should be clear enough for the hider to discern the meaning without further clarification.
+            \item The message only has to specify which question the seekers are asking next, additional information such as thermometer staring points, or a list of nearest museums for a tentacles can be provided by message as normal.
+        \end{enumerate}
+        \item Curse of the Gambler's Feet;
+        \begin{enumerate}
+            \setlength{\leftskip}{6em}
+            \item If it would be unsafe to stop walking (such as crossing a busy road), the seekers may walk to the end of the unsafe area, and then roll to catch up the additional steps.
+        \end{enumerate}
+        \item Curse of the Prosperous Home;
+        \item Curse of the Void;
+        \item Curse of the Express Route;
+        \item Curse of the Zipped Lip;
         \item Curse of the Plagued Word;
+        \item Curse of the Queue
+        \item Curse of the Rewind
+        \item Curse of the Tiny Home
     \end{enumerate}
 
 
