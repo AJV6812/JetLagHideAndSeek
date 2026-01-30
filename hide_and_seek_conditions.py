@@ -9,12 +9,15 @@ from task_scheduler import TaskScheduler
 
 scheduler = TaskScheduler()
 
-
 class Condition(enum.Enum):
     """
-    The conditions that are allowed to be applied
+    The conditions that are allowed to be applied.
+    Active Question is applied when there is a currently ongoing question.
+    Hand Lock is applied when the hider cannot modify his hand, but instead must only play or
+    discard cards.
     """
     ACTIVEQUESTION = 1
+    HAND_LOCK=2
 
 
 class ConditionManager:

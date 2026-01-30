@@ -11,5 +11,16 @@ class JetLagException(ABC, Exception):
 
 class QuestionActiveException(JetLagException):
     """
-    This is the exception that is raised if the hiders ask a question while one is already active.
+    This is the exception that is raised if the seekers ask a question while one is already active.
+    """
+
+class HandSizeExceededException(JetLagException):
+    """
+    This is the exception that is raised if the hider answers a question with an oversized hand.
+    """
+
+class CardNotPlayableException(JetLagException):
+    """
+    This is the exception that is raised if a card is played without satisfying the necessary
+    conditions.
     """
